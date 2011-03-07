@@ -5,7 +5,7 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Comment=Desinstala OpenOffice.org e instala LibreOffice
+Comment=Instala Libreoffice
 Icon=/usr/share/icons/Humanity/actions/48/document-import.svg
 Exec=xterm -e "cd /tmp && sudo add-apt-repository ppa:libreoffice/ppa && sudo apt-get update; sudo aptitude remove --purge openoffice.org-common openoffice.org-core openoffice.org-base openoffice.org-base-core openoffice.org-calc openoffice.org-draw openoffice.org-emailmerge openoffice.org-gnome openoffice.org-gtk openoffice.org-impress openoffice.org-java-common openoffice.org-l10n-es openoffice.org-math openoffice.org-style-human openoffice.org-writer openoffice.org-help-es openoffice.org-help-en-us openoffice.org-l10n-common libreoffice-java-common+ libreoffice-l10n-es+ libreoffice-calc+ libreoffice-draw+ libreoffice-impress+ libreoffice-writer+ libreoffice-math+ ure+ python-uno+ libreoffice-base+ ttf-opensymbol+ ttf-liberation+ ttf-freefont+ ttf-dejavu+ libreoffice-help-es+ libnotify-bin+ && notify-send 'LibreOffice' 'Instalado' -i /usr/share/icons/Humanity/categories/48/applications-debugging.svg"
 
