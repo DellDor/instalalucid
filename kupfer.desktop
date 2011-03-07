@@ -7,6 +7,6 @@ Type=Application
 Terminal=false
 Comment=install
 Icon=/usr/share/icons/Humanity/actions/48/document-import.svg
-Exec=xterm -e "sudo add-apt-repository ppa:kupfer-team/ppa && apturl apt:kupfer?refresh=yep && notify-send 'Kaupfer' 'Instalado' -i /usr/share/icons/Humanity/categories/48/applications-debugging.svg"
+Exec=xterm -T "Instalación de Kupfer" -e "sleep 3;sudo add-apt-repository ppa:kupfer-team/ppa && apturl apt:kupfer,libnotify-bin?refresh=yep && notify-send 'Kaupfer' 'Instalado' -i /usr/share/icons/Humanity/categories/48/applications-debugging.svg"
 
 Name=Instalador de Kupfer
