@@ -1,1 +1,3 @@
-Instaladores de programas, con sus respectivas configuraciones,
+Instaladores de programas, con sus respectivas configuraciones.
+Dos tipos: archivos .desktop, a los que se les debe dar permiso de ejecución y metapaquetes .deb que llaman y configuran varias cosas.
+Todos probados en Ubuntu Lucid Lynx. Se supone que deben funcionar incluso para versiones superiores. 
