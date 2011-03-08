@@ -1,3 +1,22 @@
 Instaladores de programas, con sus respectivas configuraciones.
 Dos tipos: archivos .desktop, a los que se les debe dar permiso de ejecución y metapaquetes .deb que llaman y configuran varias cosas.
-Todos probados en Ubuntu Lucid Lynx. Se supone que deben funcionar incluso para versiones superiores. 
+Todos probados en Ubuntu Lucid Lynx. Se supone que deben funcionar incluso para versiones superiores, pues emplean:
+ Sistema ppa para los repositorios.
+-libnotify-bin para los mensajes al usuario (sustituible en el futuro por zenity)
+- apturl para la instalación de los paquetes.
+
+Para descargar un solo archivo, o uno por uno:
+wget --no-check-certificate https://github.com/DellDor/instalalucid/raw/master/libreoffice.desktop
+
+Luego darle permiso de ejecución.
+
+
+
+Añadir a repo git:
+==================
+git add archivos
+
+Subir:
+======
+git commit -m 'Mensaje'
+git push -vu instaladores master
