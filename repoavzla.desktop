@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+#Revisa el listado de repositorio y cambia a Venezuela si no está
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Comment=Instalador de Kupfer
+Icon=/usr/share/icons/Humanity/actions/48/document-import.svg
+Exec=xterm -T "Coloque la clave y pulse enter" -e "set -xv; prueba=$(cat /etc/apt/sources.list | grep ve.archive); if [ \"x\" = \"x$prueba\" ]; then; sudo sed -i 's/archive.ubuntu.com/ve.archive.ubuntu.com/g' /etc/apt/sources.list; echo \"Cambiados los repositorios a Venezuela\"; fi"
+
+Name=Cambia repositorios a Venezuela

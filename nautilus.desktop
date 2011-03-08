@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Comment=Adicionales de Nautilus
+Icon=/usr/share/icons/Humanity/actions/48/document-import.svg
+Exec=xterm -T "Adicionales de Nautilus" -e "sudo add-apt-repository ppa:flozz/flozz; sudo add-apt-repository ppa:am-monkeyd/nautilus-elementary-ppa; apturl apt:nautilus-terminal,nautilus-open-terminal,nautilus-gksu,diff-ext,nautilus-actions,libnotify-bin?refresh=yep && notify-send 'Adicionales de Nautilus' 'Instalados' -i /usr/share/icons/Humanity/categories/48/applications-debugging.svg"
+
+Name=Adicionales de Nautilus
